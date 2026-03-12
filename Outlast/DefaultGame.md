@@ -1,9 +1,11 @@
 # DefaultGame.ini
 
+this config file contains varibles used for different things in the game.<br>
+
 ## [Configuration]
 
 BasedOn=..\Engine\Config\BaseGame.ini<br>
-??<br>
+the config file is based on an existing config file.<br>
 
 ## [Patches]
 
@@ -21,19 +23,20 @@ determines if the player has unlimited batteries or not.<br>
 ## [OLGame.OLGame]
 
 bIsDemo=false<br>
-??<br>
+if true. it will load the "DemoMapName" map instead of the "DefaultMapName" or "DLCInstalledMapName" map. the Main Menu will also be altered.<br>
 
 bForcePlayingDLC=false<br>
 ??<br>
 
 DefaultMapName=Intro_Persistent<br>
-??<br>
+sets the map to load instead of the Main Menu if the DLC (Whistleblower) is not installed.<br>
 
 DemoMapName=Demo_Intro_Persistent<br>
-??<br>
+setting "bIsDemo" to true will cause it to load this map instead of the "DefaultMapName" or "DLCInstalledMapName" map.
+"Demo_Intro_Persistent" is not a valid map and will result in a crash however changing it to a valid map like "AdminBlock_Persistent" will cause it to load it instead of crashing.<br>
 
 DLCInstalledMapName=DLC_Intro_Persistent<br>
-??<br>
+sets the map to load instead of the Main Menu if the DLC (Whistleblower) is installed.<br>
 
 ## [OLGame.OLDLCManager]
 
@@ -79,16 +82,18 @@ bForcePS4UI=false<br>
 ## [OLGame.OLHero]
 
 FirstFingerlessCheckpoint=Male_TortureDone<br>
-??<br>
+the Checkpoint where Miles looses his fingers. as an example. set this to "StartGame" to make him loose his fingers from the beginning of the game.<br>
 
 ShatteredCameraGlassCheckpoint=Female_LostCam<br>
-??<br>
+the Checkpoint where Miles's camcorder breaks. as an example. set this to "Admin_Gates" to make his camcorder break the moment he exits his car.<br>
 
 ITUniformCheckpoint=DLC_Lab_Start<br>
-??<br>
+the Checkpoint where Waylon wears his IT uniform. this Checkpoint has to be before the "PrisonerUniformCheckpoint" Checkpoint or else he will spawn in his prison uniform.
+the game may also change some textures of the model at certain Checkpoints. the solution is to reload the Checkpoint. as an example.
+set this to "Hospital_Free" and "PrisonerUniformCheckpoint" to "Building2_TortureDone" so Waylon wears his IT uniform until Eddie Gluskin is done torturing him.<br>
 
 PrisonerUniformCheckpoint=Hospital_Start<br>
-??<br>
+the Checkpoint where Waylon wears his prison uniform. as an example. set this to "DLC_Lab_Start" to make him wear it in the Underground Lab.<br>
 
 ### Player Speed
 
@@ -532,7 +537,7 @@ DefaultGravityZ=-850.0<br>
 
 ## [OLGame.OLVoiceManager]
 
-??<br>
+?? - VO Packages explaination.<br>
 
 ## [OLGame.OLSoundEnvironmentManager]
 
