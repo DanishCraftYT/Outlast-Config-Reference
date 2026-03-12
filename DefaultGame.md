@@ -333,3 +333,277 @@ ElectricHurtSoundInterval=0.8<br>
 ??<br>
 
 ### Heat
+
+HeatDamageDist=150.0<br>
+??<br>
+
+HeatDamageInterval=0.6<br>
+??<br>
+
+HeatDamagePerSec=15.0<br>
+??<br>
+
+HeatMaxBlurDist=75.0<br>
+??<br>
+
+HeatMinBlurDist=250.0<br>
+??<br>
+
+HeatMinBlurAmount=0.8<br>
+??<br>
+
+HeatBlurApproachCoeffIn=0.99<br>
+??<br>
+
+HeatBlurApproachCoeffOut=0.5<br>
+??<br>
+
+### Death Screen
+
+DeathScreenDuration=7.5<br>
+??<br>
+
+### Footsteps
+
+NumBloodyFootsteps=12<br>
+??<br>
+
+### Look Back Camera Offset
+
+LookBackCamRotOffset=155.0<br>
+??<br>
+
+LookBackCamBackOffset=60.0<br>
+??<br>
+
+LookBackCamSideOffset=20.0<br>
+??<br>
+
+### Lean Speed
+
+LeanSpeedThreshold=25.0<br>
+??<br>
+
+### Door Loudness
+
+DoorOpenInstantLoudness=0.6<br>
+??<br>
+
+DoorOpenPartialLoudness=0.3<br>
+??<br>
+
+DoorCloseFastLoudness=0.3<br>
+??<br>
+
+DoorEnterLockerLoudness=0.2<br>
+??<br>
+
+DoorExitLockerLoudness=0.2<br>
+??<br>
+
+DoorRunThroughLoudness=1.0<br>
+??<br>
+
+### Player Loudness
+
+WalkingLoudness=0.3<br>
+??<br>
+
+CrouchLoudness=0.1<br>
+??<br>
+
+RunningLoudness=1.0<br>
+??<br>
+
+WalkingWaterLoudness=0.45<br>
+??<br>
+
+CrouchWaterLoudness=0.1<br>
+??<br>
+
+FallingHighLoudness=1.0<br>
+??<br>
+
+FallingMedLoudness=0.5<br>
+??<br>
+
+FallingLowLoudness=0.2<br>
+??<br>
+
+HobblingWalkLoudness=0.4<br>
+??<br>
+
+HobblingRunLoudness=1.0<br>
+??<br>
+
+#### Landing Loudness
+
+LandingBigLoudness=0.8<br>
+??<br>
+
+LandingSmallLoudness=0.3<br>
+??<br>
+
+LandingBigWaterLoudness=1.0<br>
+??<br>
+
+LandingSmallWaterLoudness=0.5<br>
+??<br>
+
+### Moving Noise
+
+MovingNoiseStartTime=1.75<br>
+??<br>
+
+MovingNoiseClearTime=1.0<br>
+??<br>
+
+## [OLGame.OLPlayerController]
+
+DefaultSoundOcclusion=0.65<br>
+??<br>
+
+bEnableShadowOptimisation=true<br>
+??<br>
+
+bEnableLightOptimisation=true<br>
+??<br>
+
+ForceFeedbackManagerClassName="WinDrv.XnaForceFeedbackManager"<br>
+??<br>
+
+bEnableForceFeedbackManager=true<br>
+??<br>
+
+FirstSoldierFindableCheckpoint=Sewer_start<br>
+??<br>
+
+FirstSurgeonFindableCheckpoint=Male_surgeon<br>
+??<br>
+
+### Struggle
+
+StruggleInputThresholdForWin=50000.0<br>
+??<br>
+
+StruggleShakesThresholdForWin=2.0<br>
+??<br>
+
+StruggleInputThresholdForWinNoFail=15000.0<br>
+??<br>
+
+StruggleShakesThresholdForWinNoFail=5.0<br>
+??<br>
+
+### Number Of Batteries
+
+DefaultNumBatteries=2<br>
+??<br>
+
+NrmMaxNumBatteries=10<br>
+??<br>
+
+HardMaxNumBatteries=5<br>
+??<br>
+
+NightmareMaxNumBatteries=2<br>
+??<br>
+
+### Chase Music Delay
+
+AIChaseMusicTimeDelay=0.5f<br>
+??<br>
+
+## [OLGame.OLHeroCamera]
+
+CameraBoneName=Hero-Camera<br>
+??<br>
+
+ViewLimitsSoftZone=20.0<br>
+??<br>
+
+SoftZoneStiffness=1000.0<br>
+??<br>
+
+## [Engine.WorldInfo]
+
+DefaultGravityZ=-850.0<br>
+??<br>
+
+## [OLGame.OLVoiceManager]
+
+??<br>
+
+## [OLGame.OLSoundEnvironmentManager]
+
+bEnableSoundVirtualization=true<br>
+??<br>
+
+OcclusionApproachCoeff=0.99<br>
+??<br>
+
+ObstructionApproachCoeff=0.95<br>
+??<br>
+
+MaxPathingDist=1200.0; max search above the direct distance<br>
+??<br>
+
+FreePathingDist=500.0; we give some distance free of occlusion after the direct dist<br>
+??<br>
+
+ObstructionRatioInSameVolume=0.5<br>
+??<br>
+
+LockerOcclusion=0.2<br>
+??<br>
+
+LockerReverbEnvironment=Locker_Space<br>
+??<br>
+
+## [OLGame.OLDmgType]
+
+SpeedPenaltyPctOnDamage=0.75<br>
+??<br>
+
+SpeedPenaltyDuration=0.75<br>
+??<br>
+
+## [OLGame.OLDmgType_GenericHit]
+
+SpeedPenaltyPctOnDamage=0.75<br>
+??<br>
+
+SpeedPenaltyDuration=0.75<br>
+??<br>
+
+## [OLGame.OLDmgType_Fell]
+
+SpeedPenaltyPctOnDamage=0.75<br>
+??<br>
+
+SpeedPenaltyDuration=1.5<br>
+??<br>
+
+## [OLGame.OLDmgType_SoldierPunch]
+
+SpeedPenaltyPctOnDamage=0.75<br>
+??<br>
+
+SpeedPenaltyDuration=0.75<br>
+??<br>
+
+## [OLGame.OLDmgType_NanoFog]
+
+SpeedPenaltyPctOnDamage=0.0<br>
+??<br>
+
+SpeedPenaltyDuration=0.5<br>
+??<br>
+
+## [OLGame.OLDmgType_Fire]
+
+SpeedPenaltyPctOnDamage=0.5<br>
+??<br>
+
+SpeedPenaltyDuration=0.5<br>
+??<br>
