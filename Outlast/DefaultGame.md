@@ -144,7 +144,7 @@ JumpClearanceWalking=200<br>
 JumpClearanceRunning=300<br>
 ??<br>
 
-### ??
+### External Impulse
 
 ExternalImpulseDecelCoeff=0.97<br>
 ??<br>
@@ -279,8 +279,7 @@ NrmBatteryDuration=150.0<br>
 determines how long batteries last on Normal difficulty.<br>
 
 HardBatteryDuration=150.0<br>
-determines how long batteries last on Hard difficulty.<br>
-??: includes Nightmare and Insane difficulties?<br>
+determines how long batteries last on Hard, Nightmare, and Insane difficulty.<br>
 
 ### Night Vision Glitch
 
@@ -366,12 +365,12 @@ HeatBlurApproachCoeffOut=0.5<br>
 ### Death Screen
 
 DeathScreenDuration=7.5<br>
-??<br>
+determines the length of the death screen (the screen that appears after a death animation).<br>
 
 ### Footsteps
 
 NumBloodyFootsteps=12<br>
-??<br>
+determines how many footsteps should leave a blood imprint on the floor after stepping on blood.<br>
 
 ### Look Back Camera Offset
 
@@ -503,21 +502,21 @@ StruggleShakesThresholdForWinNoFail=5.0<br>
 ### Number Of Batteries
 
 DefaultNumBatteries=2<br>
-??<br>
+determines how many batteries you spawn with when loading a save file. this value is capped by the maximum number of batteries value for each difficulty.<br>
 
 NrmMaxNumBatteries=10<br>
-??<br>
+determines the maximum number of batteries the player can have at once on Normal difficulty.<br>
 
 HardMaxNumBatteries=5<br>
-??<br>
+determines the maximum number of batteries the player can have at once on Hard difficulty.<br>
 
 NightmareMaxNumBatteries=2<br>
-??<br>
+determines the maximum number of batteries the player can have at once on Nightmare and Insane difficulties.<br>
 
 ### Chase Music Delay
 
 AIChaseMusicTimeDelay=0.5f<br>
-??<br>
+determines how much time should pass from when a enemy see's the player to when the chase music starts playing. if it's "0f". the chase music will not start.<br>
 
 ## [OLGame.OLHeroCamera]
 
@@ -533,7 +532,8 @@ SoftZoneStiffness=1000.0<br>
 ## [Engine.WorldInfo]
 
 DefaultGravityZ=-850.0<br>
-??<br>
+determines how much gravity affects the player. higher means gravity will be stronger. lower means gravity will be weaker. if it's "0". the player will be stuck in the air forever.
+if it's above "0". the player will fly upwards instead of downwards (except when jumping).<br>
 
 ## [OLGame.OLVoiceManager]
 
